@@ -1,4 +1,7 @@
-transition {background-color: ghostwhite;}
-transition :hover {
-    background-color:cornflowerblue;
+button {
+background-color: ghostwhite;
 }
+button:hover {
+    background-color: cornflowerblue;
+}
+.container {float:inherit}
