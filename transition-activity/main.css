@@ -78,11 +78,11 @@ button  {
   font-size: 1.5em;
   position: absolute;
   top: 155%; 
-  left: 57%;
+  left: 57.5%;
   transform: translate(-100%, -100%);
 }
 a { font-size: 1em;
   position: absolute;
   top: 146%; 
-  left: 52%;
+  left: 52.5%;
   transform: translate(-91%, -100%);}
