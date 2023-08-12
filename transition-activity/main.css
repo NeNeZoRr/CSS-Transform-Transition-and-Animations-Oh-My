@@ -3,22 +3,86 @@
 body  {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  background-image: url("./assets/benjamin-voros-phIFdC6lA4E-unsplash.jpg");
-  background-attachment: fixed;
+  background-attachment: absolute;
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: 100%;
+  background-size: 90%;
+  margin: 0;
+  padding: 30px;
+}
+
+img{
+  width: 100%;
+  height: 70%;
 }
 
 .caption {
-  width: 80%;
-  margin: auto;
+  position: relative;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
-button {
+.caption__media {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption__overlay {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  transform: translateY(100%);
+  transition: transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+  transform: translateY(0);
+}
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+  }
+  
+  .caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+  }
+  #captiontitle {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 140%; 
+    left: 62%; 
+    transform: translate(-90%, -90%); 
+    z-index: 1;
+    color: black;
+    font-size: 40px; 
+  }
+button  {
+  display: inline-block;
   padding: 1em;
   margin: .2em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
+  position: absolute;
+  top: 155%; 
+  left: 57%;
+  transform: translate(-100%, -100%);
 }
+a { font-size: 1em;
+  position: absolute;
+  top: 146%; 
+  left: 52%;
+  transform: translate(-91%, -100%);}

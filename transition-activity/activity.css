@@ -2,6 +2,5 @@ button {
 background-color: ghostwhite;
 }
 button:hover {
-    background-color: cornflowerblue;
+background-color: cornflowerblue;
 }
-.container {float:inherit}
